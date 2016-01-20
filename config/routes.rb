@@ -1,8 +1,8 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do 
   resources :posts
 
 
-map.create_post 'post/create', :controller => 'posts', :action => 'create', :conditions => { :method => :get }
+create 'post/create', :controller => 'posts', :action => 'create', :conditions => { :method => :get }
 
 root :to => "posts#index"
 
