@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ingavedatum:</strong>
+  <%= @post.ingavedatum %>
+</p>
+
+<p>
+  <strong>Einddatum:</strong>
+  <%= @post.einddatum %>
+</p>
+
+<p>
+  <strong>Prioriteit:</strong>
+  <%= @post.prioriteit %>
+</p>
+
+<p>
+  <strong>Beschrijving:</strong>
+  <%= @post.beschrijving %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @post.status %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
